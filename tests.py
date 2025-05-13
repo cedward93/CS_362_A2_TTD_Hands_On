@@ -16,6 +16,10 @@ class TestCheckPwd (unittest.TestCase):
         """testing for a valid length"""
         self.assertTrue(check_pwd("Test.length13"))
 
+    def testing_long_length(self):
+        """testing a length that is more than the length"""
+        self.assertFalse(check_pwd("Test.lengthOverTwenty"))
+
 
 
 
