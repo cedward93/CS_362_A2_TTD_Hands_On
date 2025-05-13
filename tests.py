@@ -4,9 +4,11 @@ from check_pwd import check_pwd
 
 class TestCheckPwd (unittest.TestCase):
 
-    def test_valid_min_length(self):
-        """tests a valid password length"""
-        self.assertTrue(check_pwd("12345678"))
+    def test_assert_false(self):
+        """tests a valid min password length"""
+        self.assertFalse(check_pwd())
+
+
 
 
 if __name__ == '__main__':
