@@ -1,3 +1,3 @@
 
 def check_pwd(pwd: str) -> bool:
-    pass
+    return len(pwd) > 7
